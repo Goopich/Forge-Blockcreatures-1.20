@@ -10,7 +10,7 @@ import net.minecraftforge.registries.RegistryObject;
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, BlockCreatures.MOD_ID);
-    public static final RegistryObject<Item> SEED_BALL = ITEMS.register("Seed Ball",
+    public static final RegistryObject<Item> SEED_BALL = ITEMS.register("seed_ball",
             () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
