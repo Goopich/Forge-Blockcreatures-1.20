@@ -1,7 +1,10 @@
 package net.goopich.blockcreatures;
 
 import com.mojang.logging.LogUtils;
+import net.goopich.blockcreatures.item.ModItems;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.event.CreativeModeTabEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -19,12 +22,21 @@ public class BlockCreatures {
     public BlockCreatures() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
-        modEventBus.addListener(this::commonSetup);
+        ModItems.register(modEventBus);
 
+        modEventBus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);
+
+        modEventBus.addListener(this::addCreative);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
+    }
+
+    private void addCreative(CreativeModeTabEvent.BuildContents event) {
+        if(event.getTab() == CreativeModeTabs.FOOD_AND_DRINKS) {
+            event.accept(ModItems.SEED_BALL);
+        }
     }
 
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
