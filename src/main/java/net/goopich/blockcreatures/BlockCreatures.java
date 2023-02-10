@@ -1,8 +1,8 @@
 package net.goopich.blockcreatures;
 
 import com.mojang.logging.LogUtils;
+import net.goopich.blockcreatures.item.ModCreativeModeTabs;
 import net.goopich.blockcreatures.item.ModItems;
-import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.CreativeModeTabEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -34,10 +34,11 @@ public class BlockCreatures {
     }
 
     private void addCreative(CreativeModeTabEvent.BuildContents event) {
-        if(event.getTab() == CreativeModeTabs.FOOD_AND_DRINKS) {
+        if(event.getTab() == ModCreativeModeTabs.BLOCKCREATURES) {
             event.accept(ModItems.SEED_BALL);
         }
     }
+
 
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
     @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
