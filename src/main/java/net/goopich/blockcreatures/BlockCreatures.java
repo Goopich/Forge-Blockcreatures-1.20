@@ -36,6 +36,8 @@ public class BlockCreatures {
     private void addCreative(CreativeModeTabEvent.BuildContents event) {
         if(event.getTab() == ModCreativeModeTabs.BLOCKCREATURES) {
             event.accept(ModItems.SEED_BALL);
+            event.accept(ModItems.ROASTED_SUNFLOWER_SEEDS);
+            event.accept(ModItems.ROASTED_PUMPKIN_SEEDS);
         }
     }
 

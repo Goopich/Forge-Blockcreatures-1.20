@@ -15,6 +15,14 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(
                     new FoodProperties.Builder().nutrition(4).saturationMod(4).alwaysEat().build()))
     );
+    public static final RegistryObject<Item> ROASTED_SUNFLOWER_SEEDS = ITEMS.register("roasted_sunflower_seeds",
+            () -> new Item(new Item.Properties().food(
+                    new FoodProperties.Builder().nutrition(4).saturationMod(4).alwaysEat().build()))
+    );
+    public static final RegistryObject<Item> ROASTED_PUMPKIN_SEEDS = ITEMS.register("roasted_pumpkin_seeds",
+            () -> new Item(new Item.Properties().food(
+                    new FoodProperties.Builder().nutrition(4).saturationMod(4).alwaysEat().build()))
+    );
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
