@@ -1,6 +1,7 @@
 package net.goopich.blockcreatures;
 
 import com.mojang.logging.LogUtils;
+import net.goopich.blockcreatures.block.ModBlocks;
 import net.goopich.blockcreatures.item.ModCreativeModeTabs;
 import net.goopich.blockcreatures.item.ModItems;
 import net.minecraftforge.common.MinecraftForge;
@@ -23,6 +24,7 @@ public class BlockCreatures {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);
@@ -38,6 +40,7 @@ public class BlockCreatures {
             event.accept(ModItems.SEED_BALL);
             event.accept(ModItems.ROASTED_SUNFLOWER_SEEDS);
             event.accept(ModItems.ROASTED_PUMPKIN_SEEDS);
+            event.accept(ModBlocks.WOOD_PULP);
         }
     }
 

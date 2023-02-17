@@ -17,6 +17,6 @@ public class ModCreativeModeTabs {
     public static void registerCreativeModeTabs(CreativeModeTabEvent.Register event) {
         BLOCKCREATURES = event.registerCreativeModeTab(new ResourceLocation(BlockCreatures.MOD_ID, "blockcreatures"),
                 builder -> builder.icon(()-> new ItemStack(ModItems.SEED_BALL.get()))
-                        .title(Component.translatable("creativemodtab.blockcreatures_tab")));
+                        .title(Component.translatable("creativemodetab.blockcreatures_tab")));
     }
 }
