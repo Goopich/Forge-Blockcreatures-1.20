@@ -43,6 +43,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> TANGLED_ROSE_BUSH = registerBlock("tangled_rose_bush",
             () -> new Block(BlockBehaviour.Properties.of(Material.PLANT)
                     .strength(0.5f).noOcclusion().sound(SoundType.AZALEA_LEAVES)));
+    public static final RegistryObject<Block> BLUEPOT = registerBlock("bluepot",
+            () -> new Block(BlockBehaviour.Properties.of(Material.ICE)
+                    .strength(2).noOcclusion().sound(SoundType.GLASS)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

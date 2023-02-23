@@ -1,0 +1,58 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [32, 32],
+	"textures": {
+		"0": "blockcreatures:block/bluepot",
+		"particle": "blockcreatures:block/bluepot"
+	},
+	"elements": [
+		{
+			"from": [2, 0, 2],
+			"to": [14, 2, 14],
+			"faces": {
+				"north": {"uv": [3, 0, 6, 0.5], "texture": "#0"},
+				"east": {"uv": [3, 0.5, 6, 1], "texture": "#0"},
+				"south": {"uv": [3, 1, 6, 1.5], "texture": "#0"},
+				"west": {"uv": [3, 1.5, 6, 2], "texture": "#0"},
+				"up": {"uv": [3, 3, 0, 0], "texture": "#0"},
+				"down": {"uv": [3, 3, 0, 6], "texture": "#0"}
+			}
+		},
+		{
+			"from": [5, 14, 5],
+			"to": [11, 16, 11],
+			"faces": {
+				"north": {"uv": [1.75, 12.5, 3.25, 13], "texture": "#0"},
+				"east": {"uv": [1.75, 13, 3.25, 13.5], "texture": "#0"},
+				"south": {"uv": [1.75, 13.5, 3.25, 14], "texture": "#0"},
+				"west": {"uv": [1.75, 14, 3.25, 14.5], "texture": "#0"},
+				"up": {"uv": [1.75, 14, 0.25, 12.5], "texture": "#0"},
+				"down": {"uv": [1.75, 14, 0.25, 15.5], "texture": "#0"}
+			}
+		},
+		{
+			"from": [3, 2, 3],
+			"to": [13, 4, 13],
+			"faces": {
+				"north": {"uv": [13.5, 0, 16, 0.5], "texture": "#0"},
+				"east": {"uv": [13.5, 0.5, 16, 1], "texture": "#0"},
+				"south": {"uv": [13.5, 1, 16, 1.5], "texture": "#0"},
+				"west": {"uv": [13.5, 1.5, 16, 2], "texture": "#0"},
+				"up": {"uv": [13.5, 2.5, 11, 0], "texture": "#0"},
+				"down": {"uv": [13.5, 2.5, 11, 5], "texture": "#0"}
+			}
+		},
+		{
+			"from": [2, 4, 2],
+			"to": [14, 14, 14],
+			"faces": {
+				"north": {"uv": [13, 7.5, 16, 10], "texture": "#0"},
+				"east": {"uv": [13, 10, 16, 12.5], "texture": "#0"},
+				"south": {"uv": [13, 12.5, 16, 15], "texture": "#0"},
+				"west": {"uv": [10, 13.5, 13, 16], "texture": "#0"},
+				"up": {"uv": [13, 10.5, 10, 7.5], "texture": "#0"},
+				"down": {"uv": [13, 10.5, 10, 13.5], "texture": "#0"}
+			}
+		}
+	]
+}
