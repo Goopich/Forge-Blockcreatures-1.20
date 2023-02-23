@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "tag": "blockcreatures:darkwood"
+  },
+  "result": "blockcreatures:dark_sawdust"
+}

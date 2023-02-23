@@ -4,6 +4,9 @@ import com.mojang.logging.LogUtils;
 import net.goopich.blockcreatures.block.ModBlocks;
 import net.goopich.blockcreatures.item.ModCreativeModeTabs;
 import net.goopich.blockcreatures.item.ModItems;
+import net.minecraft.client.gui.screens.MenuScreens;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.CreativeModeTabEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -27,7 +30,6 @@ public class BlockCreatures {
         ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
-        MinecraftForge.EVENT_BUS.register(this);
 
         modEventBus.addListener(this::addCreative);
     }
@@ -40,7 +42,18 @@ public class BlockCreatures {
             event.accept(ModItems.SEED_BALL);
             event.accept(ModItems.ROASTED_SUNFLOWER_SEEDS);
             event.accept(ModItems.ROASTED_PUMPKIN_SEEDS);
+            event.accept(ModItems.SAWDUST);
+            event.accept(ModItems.DARK_SAWDUST);
+            event.accept(ModItems.TROPICAL_SAWDUST);
+            event.accept(ModItems.FUNGAL_SAWDUST);
+            event.accept(ModBlocks.SAWDUST_BLOCK);
             event.accept(ModBlocks.WOOD_PULP);
+            event.accept(ModBlocks.DARK_SAWDUST_BLOCK);
+            event.accept(ModBlocks.DARK_WOOD_PULP);
+            event.accept(ModBlocks.TROPICAL_SAWDUST_BLOCK);
+            event.accept(ModBlocks.TROPICAL_WOOD_PULP);
+            event.accept(ModBlocks.TANGLED_ROSE_BUSH_BLOCK);
+            event.accept(ModBlocks.TANGLED_ROSE_BUSH);
         }
     }
 
@@ -48,8 +61,5 @@ public class BlockCreatures {
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
     @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
     public static class ClientModEvents {
-        @SubscribeEvent
-        public static void onClientSetup(FMLClientSetupEvent event) {
-        }
     }
 }

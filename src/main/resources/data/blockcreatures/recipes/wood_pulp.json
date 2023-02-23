@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "W": {
+      "item": "blockcreatures:sawdust_block"
+    },
+    "o": {
+      "item": "minecraft:honey_bottle"
+    }
+  },
+  "pattern": [
+    "WWW",
+    "WoW",
+    "WWW"
+  ],
+  "result": {
+    "item": "blockcreatures:wood_pulp",
+    "count": 8
+  }
+}

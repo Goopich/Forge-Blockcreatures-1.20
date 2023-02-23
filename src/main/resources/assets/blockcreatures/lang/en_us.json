@@ -3,6 +3,17 @@
   "item.blockcreatures.roasted_sunflower_seeds": "Roasted Sunflower Seeds",
   "item.blockcreatures.roasted_pumpkin_seeds": "Roasted Pumpkin Seeds",
   "block.blockcreatures.wood_pulp": "Wood Pulp",
+  "block.blockcreatures.dark_wood_pulp": "Dark Wood Pulp",
+  "block.blockcreatures.tropical_wood_pulp": "Tropical Wood Pulp",
+  "item.blockcreatures.sawdust": "Sawdust",
+  "item.blockcreatures.dark_sawdust": "Dark Sawdust",
+  "item.blockcreatures.tropical_sawdust": "Tropical Sawdust",
+  "item.blockcreatures.fungal_sawdust": "Fungal Sawdust",
+  "block.blockcreatures.sawdust_block": "Sawdust Block",
+  "block.blockcreatures.dark_sawdust_block": "Dark Sawdust Block",
+  "block.blockcreatures.tropical_sawdust_block": "Tropical Sawdust Block",
+  "block.blockcreatures.tangled_rose_bush_block": "Tangled Rose Bush Block",
+  "block.blockcreatures.tangled_rose_bush": "Tangled Rose Bush",
 
   "creativemodetab.blockcreatures_tab": "Blockcreatures"
 }

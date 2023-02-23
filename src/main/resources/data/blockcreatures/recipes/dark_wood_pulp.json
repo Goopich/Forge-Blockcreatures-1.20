@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "W": {
+      "item": "blockcreatures:dark_sawdust_block"
+    },
+    "o": {
+      "item": "minecraft:sweet_berries"
+    }
+  },
+  "pattern": [
+    "WWW",
+    "WoW",
+    "WWW"
+  ],
+  "result": {
+    "item": "blockcreatures:dark_wood_pulp",
+    "count": 8
+  }
+}

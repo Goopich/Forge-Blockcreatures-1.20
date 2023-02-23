@@ -24,6 +24,15 @@ public class ModItems {
                     new FoodProperties.Builder().nutrition(4).saturationMod(4).alwaysEat().build()))
     );
 
+    public static final RegistryObject<Item> SAWDUST = ITEMS.register("sawdust",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> DARK_SAWDUST = ITEMS.register("dark_sawdust",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> TROPICAL_SAWDUST = ITEMS.register("tropical_sawdust",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> FUNGAL_SAWDUST = ITEMS.register("fungal_sawdust",
+            () -> new Item(new Item.Properties()));
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

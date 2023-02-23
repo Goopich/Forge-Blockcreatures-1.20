@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "W": {
+      "item": "blockcreatures:tropical_sawdust_block"
+    },
+    "o": {
+      "item": "minecraft:vine"
+    }
+  },
+  "pattern": [
+    "WWW",
+    "WoW",
+    "WWW"
+  ],
+  "result": {
+    "item": "blockcreatures:tropical_wood_pulp",
+    "count": 8
+  }
+}
