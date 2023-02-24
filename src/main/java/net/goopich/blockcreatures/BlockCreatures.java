@@ -55,6 +55,8 @@ public class BlockCreatures {
             event.accept(ModBlocks.TANGLED_ROSE_BUSH_BLOCK);
             event.accept(ModBlocks.TANGLED_ROSE_BUSH);
             event.accept(ModBlocks.BLUEPOT);
+            event.accept(ModBlocks.REDPOT);
+            event.accept(ModBlocks.YELLOWPOT);
         }
     }
 
