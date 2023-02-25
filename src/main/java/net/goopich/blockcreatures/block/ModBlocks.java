@@ -53,6 +53,15 @@ public class ModBlocks {
     public static final RegistryObject<Block> YELLOWPOT = registerBlock("yellowpot",
             () -> new Block(BlockBehaviour.Properties.of(Material.ICE)
                     .strength(2).noOcclusion().sound(SoundType.GLASS)));
+    public static final RegistryObject<Block> GREENPOT = registerBlock("greenpot",
+            () -> new Block(BlockBehaviour.Properties.of(Material.ICE)
+                    .strength(2).noOcclusion().sound(SoundType.GLASS)));
+    public static final RegistryObject<Block> PURPLEPOT = registerBlock("purplepot",
+            () -> new Block(BlockBehaviour.Properties.of(Material.ICE)
+                    .strength(2).noOcclusion().sound(SoundType.GLASS)));
+    public static final RegistryObject<Block> ORANGEPOT = registerBlock("orangepot",
+            () -> new Block(BlockBehaviour.Properties.of(Material.ICE)
+                    .strength(2).noOcclusion().sound(SoundType.GLASS)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

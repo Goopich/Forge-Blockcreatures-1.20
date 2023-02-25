@@ -54,9 +54,12 @@ public class BlockCreatures {
             event.accept(ModBlocks.TROPICAL_WOOD_PULP);
             event.accept(ModBlocks.TANGLED_ROSE_BUSH_BLOCK);
             event.accept(ModBlocks.TANGLED_ROSE_BUSH);
-            event.accept(ModBlocks.BLUEPOT);
             event.accept(ModBlocks.REDPOT);
+            event.accept(ModBlocks.ORANGEPOT);
             event.accept(ModBlocks.YELLOWPOT);
+            event.accept(ModBlocks.GREENPOT);
+            event.accept(ModBlocks.BLUEPOT);
+            event.accept(ModBlocks.PURPLEPOT);
         }
     }
 

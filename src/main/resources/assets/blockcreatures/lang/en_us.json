@@ -17,6 +17,9 @@
   "block.blockcreatures.bluepot": "Blue Pot",
   "block.blockcreatures.redpot": "Red Pot",
   "block.blockcreatures.yellowpot": "Yellow Pot",
+  "block.blockcreatures.greenpot": "Green Pot",
+  "block.blockcreatures.purplepot": "Purple Pot",
+  "block.blockcreatures.orangepot": "Orange Pot",
 
   "creativemodetab.blockcreatures_tab": "Blockcreatures"
 }
