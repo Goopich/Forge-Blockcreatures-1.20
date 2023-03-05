@@ -20,6 +20,8 @@
   "block.blockcreatures.greenpot": "Green Pot",
   "block.blockcreatures.purplepot": "Purple Pot",
   "block.blockcreatures.orangepot": "Orange Pot",
+  "block.blockcreatures.gold_poppy": "Gold Poppy",
+  "block.blockcreatures.potted_gold_poppy": "Potted Gold Poppy",
 
   "creativemodetab.blockcreatures_tab": "Blockcreatures"
 }

@@ -1,5 +1,6 @@
 {
 	"credit": "Made with Blockbench",
+	"render_type": "cutout",
 	"textures": {
 		"0": "blockcreatures:block/purplepot",
 		"particle": "blockcreatures:block/purplepot"
@@ -112,6 +113,5 @@
 		"fixed": {
 			"scale": [0.7, 0.7, 0.7]
 		}
-	},
-	"render_type": "cutout"
+	}
 }

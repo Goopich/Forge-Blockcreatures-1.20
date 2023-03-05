@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/flower_pot_cross",
+  "textures": {
+    "plant": "blockcreatures:block/gold_poppy"
+  },
+  "render_type": "cutout"
+}

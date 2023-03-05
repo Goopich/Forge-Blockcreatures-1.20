@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "blockcreatures:gold_poppy",
+    "blockcreatures:tangled_rose_bush",
+    "blockcreatures:tangled_rose_bush_block"
+  ]
+}

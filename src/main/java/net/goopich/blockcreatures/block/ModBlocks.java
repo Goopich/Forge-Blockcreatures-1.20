@@ -1,11 +1,13 @@
 package net.goopich.blockcreatures.block;
 
 import net.goopich.blockcreatures.BlockCreatures;
+import net.goopich.blockcreatures.block.custom.Pot;
 import net.goopich.blockcreatures.item.ModItems;
+import net.minecraft.world.effect.MobEffect;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -41,27 +43,32 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.of(Material.PLANT)
                     .strength(0.5f).noOcclusion().sound(SoundType.AZALEA_LEAVES)));
     public static final RegistryObject<Block> TANGLED_ROSE_BUSH = registerBlock("tangled_rose_bush",
-            () -> new Block(BlockBehaviour.Properties.of(Material.PLANT)
+            () -> new AzaleaBlock(BlockBehaviour.Properties.of(Material.PLANT)
                     .strength(0.5f).noOcclusion().sound(SoundType.AZALEA_LEAVES)));
     public static final RegistryObject<Block> BLUEPOT = registerBlock("bluepot",
-            () -> new Block(BlockBehaviour.Properties.of(Material.ICE)
+            () -> new Pot(BlockBehaviour.Properties.of(Material.ICE)
                     .strength(2).noOcclusion().sound(SoundType.GLASS)));
     public static final RegistryObject<Block> REDPOT = registerBlock("redpot",
-            () -> new Block(BlockBehaviour.Properties.of(Material.ICE)
+            () -> new Pot(BlockBehaviour.Properties.of(Material.ICE)
                     .strength(2).noOcclusion().sound(SoundType.GLASS)));
-
     public static final RegistryObject<Block> YELLOWPOT = registerBlock("yellowpot",
-            () -> new Block(BlockBehaviour.Properties.of(Material.ICE)
+            () -> new Pot(BlockBehaviour.Properties.of(Material.ICE)
                     .strength(2).noOcclusion().sound(SoundType.GLASS)));
     public static final RegistryObject<Block> GREENPOT = registerBlock("greenpot",
-            () -> new Block(BlockBehaviour.Properties.of(Material.ICE)
+            () -> new Pot(BlockBehaviour.Properties.of(Material.ICE)
                     .strength(2).noOcclusion().sound(SoundType.GLASS)));
     public static final RegistryObject<Block> PURPLEPOT = registerBlock("purplepot",
-            () -> new Block(BlockBehaviour.Properties.of(Material.ICE)
+            () -> new Pot(BlockBehaviour.Properties.of(Material.ICE)
                     .strength(2).noOcclusion().sound(SoundType.GLASS)));
     public static final RegistryObject<Block> ORANGEPOT = registerBlock("orangepot",
-            () -> new Block(BlockBehaviour.Properties.of(Material.ICE)
+            () -> new Pot(BlockBehaviour.Properties.of(Material.ICE)
                     .strength(2).noOcclusion().sound(SoundType.GLASS)));
+    public static final RegistryObject<Block> GOLD_POPPY = registerBlock("gold_poppy",
+            () -> new FlowerBlock(MobEffects.NIGHT_VISION, 5,
+                    BlockBehaviour.Properties.copy(Blocks.POPPY).sound(SoundType.GRASS)));
+    public static final RegistryObject<Block> POTTED_GOLD_POPPY = BLOCKS.register("potted_gold_poppy",
+            () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), ModBlocks.GOLD_POPPY,
+                    BlockBehaviour.Properties.copy(Blocks.POPPY).sound(SoundType.GRASS)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

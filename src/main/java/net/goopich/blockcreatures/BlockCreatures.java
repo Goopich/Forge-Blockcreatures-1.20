@@ -7,6 +7,8 @@ import net.goopich.blockcreatures.item.ModItems;
 import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.FlowerPotBlock;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.CreativeModeTabEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -35,6 +37,11 @@ public class BlockCreatures {
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
+        event.enqueueWork(() -> {
+            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.GOLD_POPPY.getId(), ModBlocks.POTTED_GOLD_POPPY);
+
+
+        });
     }
 
     private void addCreative(CreativeModeTabEvent.BuildContents event) {
@@ -60,6 +67,7 @@ public class BlockCreatures {
             event.accept(ModBlocks.GREENPOT);
             event.accept(ModBlocks.BLUEPOT);
             event.accept(ModBlocks.PURPLEPOT);
+            event.accept(ModBlocks.GOLD_POPPY);
         }
     }
 

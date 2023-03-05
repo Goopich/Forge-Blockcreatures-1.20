@@ -1,5 +1,19 @@
 {
   "variants": {
-    "": { "model": "blockcreatures:block/purplepot" }
+    "facing=north": {
+      "model": "blockcreatures:block/purplepot"
+    },
+    "facing=south": {
+      "model": "blockcreatures:block/purplepot",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "blockcreatures:block/purplepot",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "blockcreatures:block/purplepot",
+      "y": 90
+    }
   }
 }
