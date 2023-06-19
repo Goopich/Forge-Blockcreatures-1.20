@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "W": {
+      "item": "blockcreatures:fungal_sawdust_block"
+    },
+    "o": {
+      "item": "minecraft:shroomlight"
+    }
+  },
+  "pattern": [
+    "WWW",
+    "WoW",
+    "WWW"
+  ],
+  "result": {
+    "item": "blockcreatures:fungal_pulp",
+    "count": 8
+  }
+}

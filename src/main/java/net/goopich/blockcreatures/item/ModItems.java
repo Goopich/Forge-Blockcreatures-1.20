@@ -1,12 +1,15 @@
 package net.goopich.blockcreatures.item;
 
 import net.goopich.blockcreatures.BlockCreatures;
+import net.goopich.blockcreatures.entity.ModEntityTypes;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Item;
+import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import software.bernie.example.registry.EntityRegistry;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
@@ -23,6 +26,10 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(
                     new FoodProperties.Builder().nutrition(4).saturationMod(4).alwaysEat().build()))
     );
+    public static final RegistryObject<Item> APPLE_PIE = ITEMS.register("apple_pie",
+            () -> new Item(new Item.Properties().food(
+                    new FoodProperties.Builder().nutrition(4).saturationMod(4.8f).alwaysEat().build()))
+    );
 
     public static final RegistryObject<Item> SAWDUST = ITEMS.register("sawdust",
             () -> new Item(new Item.Properties()));
@@ -32,9 +39,25 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> FUNGAL_SAWDUST = ITEMS.register("fungal_sawdust",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> STICKYSUBSTANCE = ITEMS.register("stickysubstance",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> SHELLITE = ITEMS.register("shellite",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CETANITE = ITEMS.register("cetanite",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CAPRINITE = ITEMS.register("caprinite",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<ForgeSpawnEggItem> STONE_BLOCK_SPAWN_EGG = ITEMS.register("stone_block_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModEntityTypes.STONE_BLOCK, 0x686868, 0x8f8f8f,
+                    new Item.Properties()));
+    public static final RegistryObject<ForgeSpawnEggItem> GRASS_BLOCK_SPAWN_EGG = ITEMS.register("grass_block_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModEntityTypes.GRASS_BLOCK, 0x59412c, 0x487e3c,
+                    new Item.Properties()));
+    public static final RegistryObject<ForgeSpawnEggItem> MUD_BLOCK_SPAWN_EGG = ITEMS.register("mud_block_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModEntityTypes.MUD_BLOCK, 0x302c39, 0x3e3536,
+                    new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }
 }
-

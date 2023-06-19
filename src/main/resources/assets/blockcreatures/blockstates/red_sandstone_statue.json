@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "blockcreatures:block/goatstatue"
+    },
+    "facing=south": {
+      "model": "blockcreatures:block/goatstatue",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "blockcreatures:block/goatstatue",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "blockcreatures:block/goatstatue",
+      "y": 90
+    }
+  }
+}

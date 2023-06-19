@@ -1,0 +1,20 @@
+
+{
+  "variants": {
+    "facing=north": {
+      "model": "blockcreatures:block/blackpot"
+    },
+    "facing=south": {
+      "model": "blockcreatures:block/blackpot",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "blockcreatures:block/blackpot",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "blockcreatures:block/blackpot",
+      "y": 90
+    }
+  }
+}
