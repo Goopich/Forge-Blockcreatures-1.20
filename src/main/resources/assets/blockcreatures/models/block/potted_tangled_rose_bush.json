@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/template_potted_azalea_bush",
+  "textures": {
+    "plant": "blockcreatures:block/potted_tangled_rose_bush_plant",
+    "side": "blockcreatures:block/potted_tangled_rose_bush_side",
+    "top": "blockcreatures:block/potted_tangled_rose_bush_top"
+  },
+  "render_type": "cutout"
+}

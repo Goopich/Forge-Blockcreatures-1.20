@@ -1,0 +1,17 @@
+{
+  "structures": [
+    {
+      "structure": "blockcreatures:mesa_temple",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+
+    "salt": 1020267302,
+
+    "spacing": 12,
+
+    "separation": 8
+  }
+}

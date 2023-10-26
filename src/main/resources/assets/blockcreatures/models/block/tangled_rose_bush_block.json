@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "blockcreatures:block/tangled_rose_bush_block"
-  },
-  "render_type": "cutout"
-}

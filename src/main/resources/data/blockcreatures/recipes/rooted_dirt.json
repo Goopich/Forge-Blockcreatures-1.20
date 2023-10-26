@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "W": {
+      "item": "blockcreatures:tangled_root"
+    },
+    "o": {
+      "item": "minecraft:dirt"
+    }
+  },
+  "pattern": [
+    " W ",
+    "WoW",
+    " W "
+  ],
+  "result": {
+    "item": "minecraft:rooted_dirt",
+    "count": 4
+  }
+}

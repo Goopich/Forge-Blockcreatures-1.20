@@ -97,9 +97,9 @@ public class StoneBlockEntity extends Animal implements GeoEntity, NeutralMob {
 
     @Override
     public void registerControllers(AnimatableManager.ControllerRegistrar controllers) {
-        controllers.add(new AnimationController<>(this, "controller",
+        controllers.add(new AnimationController(this, "controller",
                 0, this::predicate));
-        controllers.add(new AnimationController<>(this, "attackController",
+        controllers.add(new AnimationController(this, "attackController",
                 0, this::attackPredicate));
 
     }
@@ -164,7 +164,7 @@ public class StoneBlockEntity extends Animal implements GeoEntity, NeutralMob {
         return FOOD_ITEMS.test(pStack);
     }
     protected float getStandingEyeHeight(Pose pPose, EntityDimensions pSize) {
-        return 1.0F * pSize.height;
+        return 2.0F * pSize.height;
     }
     @Nullable
     @Override

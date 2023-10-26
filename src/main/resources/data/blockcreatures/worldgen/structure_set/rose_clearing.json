@@ -1,0 +1,17 @@
+{
+  "structures": [
+    {
+      "structure": "blockcreatures:rose_clearing",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+
+    "salt": 34612198750,
+
+    "spacing": 12,
+
+    "separation": 8
+  }
+}

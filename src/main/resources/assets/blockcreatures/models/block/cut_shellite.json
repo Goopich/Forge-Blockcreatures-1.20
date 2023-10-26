@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "blockcreatures:block/cut_shellite_top",
+    "side": "blockcreatures:block/cut_shellite_side"
+  }
+}

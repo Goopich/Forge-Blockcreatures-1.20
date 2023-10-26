@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "W": {
+      "item": "blockcreatures:rose_vines"
+    },
+    "o": {
+      "item": "blockcreatures:tangled_root"
+    }
+  },
+  "pattern": [
+    "WWW",
+    "WWW",
+    " o "
+  ],
+  "result": {
+    "item": "blockcreatures:tangled_rose_bush",
+    "count": 1
+  }
+}

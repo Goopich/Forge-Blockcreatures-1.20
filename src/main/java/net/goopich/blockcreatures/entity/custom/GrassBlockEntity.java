@@ -66,7 +66,7 @@ public class GrassBlockEntity extends Animal implements GeoEntity {
     }
     @Override
     public void registerControllers(AnimatableManager.ControllerRegistrar controllers) {
-        controllers.add(new AnimationController<>(this, "controller", 0 , this::predicate));
+        controllers.add(new AnimationController(this, "controller", 0 , this::predicate));
     }
     public InteractionResult mobInteract(Player pPlayer, InteractionHand pHand) {
         boolean flag = this.isFood(pPlayer.getItemInHand(pHand));

@@ -37,9 +37,9 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> TROPICAL_SAWDUST = ITEMS.register("tropical_sawdust",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> FUNGAL_SAWDUST = ITEMS.register("fungal_sawdust",
-            () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> STICKYSUBSTANCE = ITEMS.register("stickysubstance",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> TANGLED_ROOT = ITEMS.register("tangled_root",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> SHELLITE = ITEMS.register("shellite",
             () -> new Item(new Item.Properties()));
@@ -53,8 +53,8 @@ public class ModItems {
     public static final RegistryObject<ForgeSpawnEggItem> GRASS_BLOCK_SPAWN_EGG = ITEMS.register("grass_block_spawn_egg",
             () -> new ForgeSpawnEggItem(ModEntityTypes.GRASS_BLOCK, 0x59412c, 0x487e3c,
                     new Item.Properties()));
-    public static final RegistryObject<ForgeSpawnEggItem> MUD_BLOCK_SPAWN_EGG = ITEMS.register("mud_block_spawn_egg",
-            () -> new ForgeSpawnEggItem(ModEntityTypes.MUD_BLOCK, 0x302c39, 0x3e3536,
+    public static final RegistryObject<ForgeSpawnEggItem> ROOT_MONSTER_SPAWN_EGG = ITEMS.register("root_monster_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModEntityTypes.ROOT_MONSTER, 0x7d5347, 0x891d1d,
                     new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
