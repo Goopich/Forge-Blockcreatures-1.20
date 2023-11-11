@@ -78,6 +78,17 @@ public class BlockCreatures {
             event.accept(ModItems.SHELLITE);
             event.accept(ModBlocks.SHELLITE_BLOCK);
             event.accept(ModBlocks.CUT_SHELLITE);
+            event.accept(ModBlocks.CUT_SHELLITE_STAIRS);
+            event.accept(ModBlocks.CUT_SHELLITE_SLAB);
+            event.accept(ModBlocks.CHISELED_SHELLITE);
+            event.accept(ModBlocks.CUT_GOLD);
+            event.accept(ModBlocks.CUT_GOLD_STAIRS);
+            event.accept(ModBlocks.CUT_GOLD_SLAB);
+            event.accept(ModBlocks.CHISELED_GOLD);
+            event.accept(ModBlocks.CUT_IRON);
+            event.accept(ModBlocks.CUT_IRON_STAIRS);
+            event.accept(ModBlocks.CUT_IRON_SLAB);
+            event.accept(ModBlocks.CHISELED_IRON);
             event.accept(ModItems.CETANITE);
             event.accept(ModItems.CAPRINITE);
             event.accept(ModBlocks.SANDSTONESTATUE);

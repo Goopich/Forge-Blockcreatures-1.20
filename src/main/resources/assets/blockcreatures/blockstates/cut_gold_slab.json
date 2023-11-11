@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "blockcreatures:block/cut_gold_slab"
+    },
+    "type=double": {
+      "model": "blockcreatures:block/cut_gold"
+    },
+    "type=top": {
+      "model": "blockcreatures:block/cut_gold_slab_top"
+    }
+  }
+}

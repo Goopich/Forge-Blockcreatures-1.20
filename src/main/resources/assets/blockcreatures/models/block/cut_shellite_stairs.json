@@ -1,0 +1,9 @@
+
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "blockcreatures:block/shellite",
+    "side": "blockcreatures:block/cut_shellite_side",
+    "top": "blockcreatures:block/shellite"
+  }
+}

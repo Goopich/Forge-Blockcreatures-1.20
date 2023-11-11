@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "blockcreatures:block/cut_iron_slab"
+    },
+    "type=double": {
+      "model": "blockcreatures:block/cut_iron"
+    },
+    "type=top": {
+      "model": "blockcreatures:block/cut_iron_slab_top"
+    }
+  }
+}

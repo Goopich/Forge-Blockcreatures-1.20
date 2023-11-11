@@ -16,6 +16,9 @@ import net.minecraftforge.registries.RegistryObject;
 
 import java.util.function.Supplier;
 
+import static net.minecraft.world.level.block.Blocks.IRON_BLOCK;
+import static net.minecraft.world.level.block.Blocks.STONE_SLAB;
+
 public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, BlockCreatures.MOD_ID);
@@ -38,12 +41,41 @@ public class ModBlocks {
     public static final RegistryObject<Block> TROPICAL_SAWDUST_BLOCK = registerBlock("tropical_sawdust_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)
                     .strength(0.5f).sound(SoundType.GRAVEL)));
+    public static final RegistryObject<Block> CUT_GOLD = registerBlock("cut_gold",
+            () -> new Block(BlockBehaviour.Properties.copy(IRON_BLOCK)
+                    .strength(2).sound(SoundType.METAL)));
+    public static final RegistryObject<Block> CUT_GOLD_STAIRS = registerBlock("cut_gold_stairs",
+            () -> new StairBlock(IRON_BLOCK.defaultBlockState(), BlockBehaviour.Properties.copy(IRON_BLOCK)));
+    public static final RegistryObject<Block> CUT_GOLD_SLAB = registerBlock("cut_gold_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(IRON_BLOCK)));
+    public static final RegistryObject<Block> CHISELED_GOLD = registerBlock("chiseled_gold",
+            () -> new Block(BlockBehaviour.Properties.copy(IRON_BLOCK)
+                    .strength(2).sound(SoundType.METAL)));
+    public static final RegistryObject<Block> CUT_IRON = registerBlock("cut_iron",
+            () -> new Block(BlockBehaviour.Properties.copy(IRON_BLOCK)
+                    .strength(2).sound(SoundType.METAL)));
+    public static final RegistryObject<Block> CHISELED_IRON = registerBlock("chiseled_iron",
+            () -> new Block(BlockBehaviour.Properties.copy(IRON_BLOCK)
+                    .strength(2).sound(SoundType.METAL)));
+    public static final RegistryObject<Block> CUT_IRON_STAIRS = registerBlock("cut_iron_stairs",
+            () -> new StairBlock(IRON_BLOCK.defaultBlockState(), BlockBehaviour.Properties.copy(IRON_BLOCK)));
+    public static final RegistryObject<Block> CUT_IRON_SLAB = registerBlock("cut_iron_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(IRON_BLOCK)));
+
     public static final RegistryObject<Block> SHELLITE_BLOCK = registerBlock("shellite_block",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)
-                    .strength(0.5f).sound(SoundType.METAL)));
+            () -> new Block(BlockBehaviour.Properties.copy(IRON_BLOCK)
+                    .strength(2).sound(SoundType.METAL)));
 
     public static final RegistryObject<Block> CUT_SHELLITE = registerBlock("cut_shellite",
-            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(IRON_BLOCK)
+                    .strength(2).sound(SoundType.METAL)));
+    public static final RegistryObject<Block> CUT_SHELLITE_STAIRS = registerBlock("cut_shellite_stairs",
+            () -> new StairBlock(IRON_BLOCK.defaultBlockState(), BlockBehaviour.Properties.copy(IRON_BLOCK)));
+    public static final RegistryObject<Block> CUT_SHELLITE_SLAB = registerBlock("cut_shellite_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(IRON_BLOCK)));
+
+    public static final RegistryObject<Block> CHISELED_SHELLITE = registerBlock("chiseled_shellite",
+            () -> new Block(BlockBehaviour.Properties.copy(IRON_BLOCK)
                     .strength(2).sound(SoundType.METAL)));
     public static final RegistryObject<Block> SANDSTONESTATUE = registerBlock("sandstone_statue",
             () -> new Statue(BlockBehaviour.Properties.copy(Blocks.SANDSTONE)

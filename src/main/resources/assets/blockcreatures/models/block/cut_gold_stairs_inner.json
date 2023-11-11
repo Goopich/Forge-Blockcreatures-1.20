@@ -1,0 +1,9 @@
+
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "blockcreatures:block/cut_gold",
+    "side": "blockcreatures:block/cut_gold",
+    "top": "blockcreatures:block/cut_gold"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "blockcreatures:block/cut_shellite_slab"
+    },
+    "type=double": {
+      "model": "blockcreatures:block/cut_shellite"
+    },
+    "type=top": {
+      "model": "blockcreatures:block/cut_shellite_slab_top"
+    }
+  }
+}

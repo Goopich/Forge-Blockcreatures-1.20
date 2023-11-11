@@ -1,0 +1,9 @@
+
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "blockcreatures:block/cut_gold",
+    "side": "blockcreatures:block/cut_gold",
+    "top": "blockcreatures:block/cut_gold"
+  }
+}
